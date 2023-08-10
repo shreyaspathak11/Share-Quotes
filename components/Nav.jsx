@@ -32,7 +32,7 @@ const Nav = () => {
           height={50}
           className='object-contain'
         />
-        <p className="logo_text">PromptSwap</p>
+        <p className="logo_text">Share Quotes</p>
         </Link>
          
          {/* Desktop Nav */}
@@ -40,7 +40,7 @@ const Nav = () => {
           {session?.user ? (
             <div className='flex gap-3 md:gap-5'>
               <Link href='/create-prompt' className='black_btn'>
-                Create Prompt
+                Create Quotes
               </Link>
 
 

@@ -4,8 +4,8 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "PromptSwap",
-  description: "Discover & Share AI Prompts",
+  title: "Share_Quotes",
+  description: "Express you thougths to modern world and inspire others",
 };
 
 
