@@ -19,6 +19,7 @@ const Nav = () => {
       setProviders(response);
     }
     setUpProviders();
+    
   }, [])
 
 
