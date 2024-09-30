@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import QuoteCard from "./QuoteCard";
 
-import PromptCard from "./PromptCard";
-
-const PromptCardList = ({ data, handleTagClick }) => {
+const QuoteCardList = ({ data, handleTagClick }) => {
   return (
     <div className='mt-16 prompt_layout'>
       {data.map((post) => (
-        <PromptCard
+        <QuoteCard
           key={post._id}
           post={post}
           handleTagClick={handleTagClick}
@@ -20,17 +19,17 @@ const PromptCardList = ({ data, handleTagClick }) => {
 
 const Feed = () => {
   const [allPosts, setAllPosts] = useState([]);
-
-  // Search states
+  const [loading, setLoading] = useState(false); // Loader state
   const [searchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
 
   const fetchPosts = async () => {
+    setLoading(true); // Start loader before fetching
     const response = await fetch("/api/prompt");
     const data = await response.json();
-
     setAllPosts(data);
+    setLoading(false); // Stop loader after fetching
   };
 
   useEffect(() => {
@@ -54,17 +53,20 @@ const Feed = () => {
     // debounce method
     setSearchTimeout(
       setTimeout(() => {
+        setLoading(true); // Start loader during search
         const searchResult = filterPrompts(e.target.value);
         setSearchedResults(searchResult);
+        setLoading(false); // Stop loader after search results
       }, 500)
     );
   };
 
   const handleTagClick = (tagName) => {
     setSearchText(tagName);
-
+    setLoading(true); // Start loader for tag search
     const searchResult = filterPrompts(tagName);
     setSearchedResults(searchResult);
+    setLoading(false); // Stop loader after filtering by tag
   };
 
   return (
@@ -80,15 +82,28 @@ const Feed = () => {
         />
       </form>
 
-      {/* All Prompts */}
-      {searchText ? (
-        <PromptCardList
+      {/* Loader */}
+      {loading && (
+        <div className='w-full flex-center'>
+          <img
+            src='/assets/icons/loader.svg'
+            width={50}
+            height={50}
+            alt='loader'
+            className='object-contain'
+          />
+        </div>
+      )}
+
+      {/* All Prompts or Search Results */}
+      {!loading && (searchText ? (
+        <QuoteCardList
           data={searchedResults}
           handleTagClick={handleTagClick}
         />
       ) : (
-        <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
-      )}
+        <QuoteCardList data={allPosts} handleTagClick={handleTagClick} />
+      ))}
     </section>
   );
 };

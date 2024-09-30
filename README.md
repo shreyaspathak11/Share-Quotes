@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 # ShareQuotes
 
 Welcome to ShareQuotes! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.

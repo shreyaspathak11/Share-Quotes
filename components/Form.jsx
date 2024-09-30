@@ -31,9 +31,9 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Field of Prompt{" "}
+            Give a Tag{" "}
             <span className='font-normal'>
-              (#product, #webdevelopment, #idea, etc.)
+              (#motivation, #webdevelopment, #idea, etc.)
             </span>
           </span>
           <input
