@@ -9,12 +9,14 @@ Welcome to **ShareQuotes**! This project is dedicated to the joy of sharing insp
 
 ## Screenshots
 Here are some screenshots of the application in action:
+https://ibb.co/K0xp7qb
 
 ### Home Page
-![HomeScreen](.public/assets/images/1.png) 
+![homescreen](https://ibb.co/K0xp7qb)
+
 
 ### Landing Page
-![FirstPage](.public/assets/images/2.png) 
+![FirstPage](https://ibb.co/GWqxYrm) 
 
 ## Features
 
