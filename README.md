@@ -1,11 +1,17 @@
 
 # ShareQuotes
 
-![ShareQuotes Logo](./public/assets/images/logo.png) 
+<img src="/public/assets/images/logo.png" alt="ShareQuotes Logo" width="200" /> 
 
 
 Welcome to **ShareQuotes**! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.
 
+## Screenshots
+Here are some screenshots of the application in action:
+### Home Page
+![HomeScreen](./public/assets/images/1.png) 
+### Landing Page
+![FirstPage](./public//assets/images/2.png) 
 
 ## Features
 
