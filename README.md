@@ -1,7 +1,7 @@
 
 # ShareQuotes
 
-<img src="/public/assets/images/logo.png" alt="ShareQuotes Logo" width="200" /> 
+<img src="/public/assets/images/logo.png" alt="ShareQuotes Logo" width="50" /> 
 
 
 Welcome to **ShareQuotes**! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.
