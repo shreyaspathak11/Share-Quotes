@@ -1,22 +1,11 @@
 
 # ShareQuotes
 
-![ShareQuotes Logo](.public/assets/images/logo.png) 
+![ShareQuotes Logo](./public/assets/images/logo.png) 
 
 
 Welcome to **ShareQuotes**! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.
 
-
-## Screenshots
-Here are some screenshots of the application in action:
-https://ibb.co/K0xp7qb
-
-### Home Page
-![homescreen]((https://i.ibb.co/h7FJHWL/1.png))
-
-
-### Landing Page
-![FirstPage](https://ibb.co/GWqxYrm) 
 
 ## Features
 
