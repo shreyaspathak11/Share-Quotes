@@ -2,6 +2,7 @@
 import "@styles/globals.css";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
+import Head from 'next/head';
 
 export const metadata = {
   title: "Share_Quotes",
@@ -13,9 +14,9 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   <html lang='en'>
-    <head>
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    </head>
+    <Head>
+      <link rel="icon" href="/favicon.ico"  />
+    </Head>
     <body>
       <Provider>
         <div className='main'>

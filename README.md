@@ -1,7 +1,20 @@
 
 # ShareQuotes
 
-Welcome to ShareQuotes! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.
+![ShareQuotes Logo](./assets/images/logo.png) 
+
+
+Welcome to **ShareQuotes**! This project is dedicated to the joy of sharing inspiring and thought-provoking quotes. ShareQuotes provides a platform where users can discover, create, and share their favorite quotes with a global community.
+
+
+## Screenshots
+Here are some screenshots of the application in action:
+
+### Home Page
+![HomeScreen](./assets/images/1.png) 
+
+### Landing Page
+![FirstPage](./assets/images/2.png) 
 
 ## Features
 
@@ -17,7 +30,7 @@ Welcome to ShareQuotes! This project is dedicated to the joy of sharing inspirin
 - **Database:** MongoDB
 - **Authentication:** Google OAuth
 - **Deployment:** Vercel
-- 
+
 ## Getting Started
 
 Follow these steps to get started with ShareQuotes:
@@ -40,12 +53,13 @@ Follow these steps to get started with ShareQuotes:
 
 4. **Visit `http://localhost:3000` in your browser.**
 
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
@@ -56,7 +70,6 @@ We welcome contributions to make ShareQuotes even better! Feel free to open issu
 ## Contact
 
 For any inquiries or feedback, please contact me at [My Mail](mailto:shreyaspathak.ofc@gmail.com).
-
 
 ## Deploy on Vercel
 

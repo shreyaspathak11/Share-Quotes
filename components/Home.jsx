@@ -29,7 +29,7 @@ const Home = () => {
       ) : (
         <>
           <h1 className='text-3xl text-center'>
-            Welcome back, <span className='orange_gradient'>{session.user.name}</span>
+            Welcome back, <span className='orange_gradient'>{session.user.name.split(' ')[0]}</span>
           </h1>
           <p className='desc orange_gradient text-center'>
             Check out some of the newest quotes from our community!
