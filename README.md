@@ -12,7 +12,7 @@ Here are some screenshots of the application in action:
 https://ibb.co/K0xp7qb
 
 ### Home Page
-![homescreen](https://ibb.co/K0xp7qb)
+![homescreen]((https://i.ibb.co/h7FJHWL/1.png))
 
 
 ### Landing Page
