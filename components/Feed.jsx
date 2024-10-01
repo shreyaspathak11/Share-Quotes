@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import QuoteCard from "./QuoteCard";
+import Link from "next/link";
 
 const QuoteCardList = ({ data, handleTagClick }) => {
   return (
@@ -69,6 +70,11 @@ const Feed = () => {
     setLoading(false); // Stop loader after filtering by tag
   };
 
+  const clearSearch = () => {
+    setSearchText("");
+    setSearchedResults([]);
+  };
+
   return (
     <section className='feed'>
       <form className='relative w-full flex-center'>
@@ -78,13 +84,32 @@ const Feed = () => {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className='search_input peer'
+          className='search_input peer pr-10' // Adjust padding for the clear button
         />
+        {searchText && (
+          <button
+            type="button"
+            onClick={clearSearch}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 focus:outline-none"
+          >
+            ✖️
+          </button>
+        )}
       </form>
+
+      {/* Add Quote Button (visible only on mobile) */}
+      <div className="mt-4 flex justify-end">
+        <Link 
+          href="/create-prompt"
+          className='bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition-all block sm:hidden' // Visible on small screens only
+        >
+          Add a Quote
+        </Link>
+      </div>
 
       {/* Loader */}
       {loading && (
-        <div className='w-full flex-center'>
+        <div className='w-full flex-center mt-8'>
           <img
             src='/assets/icons/loader.svg'
             width={50}
