@@ -13,8 +13,16 @@ const UserSchema = new Schema({
   },
   image: {
     type: String,
-  }
-});
+  },
+  likedQuotes: [{
+    type: Schema.Types.ObjectId,  // Array of liked quote IDs
+    ref: 'Prompt',
+  }],
+  dislikedQuotes: [{
+    type: Schema.Types.ObjectId,  // Array of disliked quote IDs
+    ref: 'Prompt',
+  }]
+}, { timestamps: true });  // Correct way to add timestamps
 
 const User = models.User || model("User", UserSchema);
 

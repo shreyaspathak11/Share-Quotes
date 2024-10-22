@@ -169,3 +169,18 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.like_btn,
+.dislike_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+.like_btn:hover,
+.dislike_btn:hover {
+  @apply bg-white/20;
+}
+
+.like_btn.active,
+.dislike_btn.active {
+  @apply bg-white/30; /* Optional: Change background when active */
+}
