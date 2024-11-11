@@ -1,6 +1,9 @@
 import Prompt from "@models/prompt";
 import { connectToDB } from "@utils/database";
 
+/* fetch all quotes
+    @returns {Response} - an array of all prompt objects
+*/
 export const GET = async (request) => {
     try {
         await connectToDB()
